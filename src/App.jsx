@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { Experience } from "./components/Experience";
 import { Overlay } from "./components/Overlay";
 import { usePlay } from "./contexts/Play";
+import { Loader } from "@react-three/drei";
 
 function App() {
   const { play, end } = usePlay();
