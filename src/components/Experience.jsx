@@ -50,8 +50,8 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `Welcome to Wawatmos,
-Have a seat and enjoy the ride!`,
+        subtitle: `lorem
+        Loesorem ipsum dolor sit amet`,
       },
       {
         cameraRailDist: 1.5,
@@ -60,9 +60,8 @@ Have a seat and enjoy the ride!`,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "Lorem",
+        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
       },
       {
         cameraRailDist: -1,
@@ -71,8 +70,8 @@ We have a wide range of beverages!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
+        title: "Lorem?",
+        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
       },
       {
         cameraRailDist: 1.5,
@@ -81,8 +80,8 @@ We have a wide range of beverages!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Movies",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        title: "Lorem",
+        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
       },
     ];
   }, []);
