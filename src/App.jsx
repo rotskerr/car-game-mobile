@@ -41,6 +41,7 @@ function App() {
         {effects}
       </Canvas>
       <Overlay />
+      <Loader />
     </>
   );
 }
