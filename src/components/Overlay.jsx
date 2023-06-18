@@ -15,12 +15,12 @@ export const Overlay = () => {
       {progress === 100 && (
         <div className={`intro ${play ? "intro--disappear" : ""}`}>
           <h1 className="logo">
-            lorem
+
             <div className="spinner">
               <div className="spinner__image" />
             </div>
           </h1>
-          <p className="intro__scroll">Scroll to begin the journey</p>
+          <p className="intro__scroll">Прокрутіть, щоб почати подорож</p>
           <button
             className="explore"
             onClick={() => {
@@ -32,7 +32,11 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">lorem  ...</p>
+      <p className="outro__text" style={{ textAlign: "center" }}>
+  Цей сайт - це мій творчий космос, де поєднуються мистецтво, інновації та технології. Відчуйте гармонію кольорів, дизайну та функціональності, що створюються для надання вам неперевершеного досвіду від взаємодії з вебсайтом
+</p>
+
+
       </div>
     </div>
   );

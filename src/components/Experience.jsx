@@ -11,6 +11,8 @@ import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
+import axios from "axios";
+import { useState } from "react";
 
 const LINE_NB_POINTS = 1000;
 const CURVE_DISTANCE = 250;
@@ -18,6 +20,7 @@ const CURVE_AHEAD_CAMERA = 0.008;
 const CURVE_AHEAD_AIRPLANE = 0.02;
 const AIRPLANE_MAX_ANGLE = 35;
 const FRICTION_DISTANCE = 42;
+
 
 export const Experience = () => {
   const curvePoints = useMemo(
@@ -50,8 +53,9 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `lorem
-        Loesorem ipsum dolor sit amet`,
+        subtitle: 'Радий представити своє портфоліо! Відкрийте двері до креативного світу, де дизайн і технології зустрічаються.',
+        
+
       },
       {
         cameraRailDist: 1.5,
@@ -60,8 +64,8 @@ export const Experience = () => {
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Lorem",
-        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
+        
+        subtitle: `Привіт! Я фронтенд розробник з великою пристрастю до створення веб-інтерфейсів. Займаюся перетворенням дизайну в реальність, надаючи користувачам візуально привабливі та функціональні веб-додатки`,
       },
       {
         cameraRailDist: -1,
@@ -70,8 +74,7 @@ export const Experience = () => {
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Lorem?",
-        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
+        subtitle: `Можливо, мій досвід у фронтенд розробці поки що невеликий, але це не зменшує моєї снаги до навчання та саморозвитку. Я завжди відкритий до нових викликів і готовий працювати над розвитком своїх навичок`,
       },
       {
         cameraRailDist: 1.5,
@@ -80,8 +83,7 @@ export const Experience = () => {
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Lorem",
-        subtitle: `Lorem ipsum dolor sit amet, consectetur`,
+        subtitle: 'Мої навички включають HTML, CSS, JavaScript, React, React Three Fiber, PHP, Laravel, PostgreSQL та Blender для створення динамічних веб-інтерфейсів з 3D-візуалізацією та розробки бекенд-функціоналу та баз даних',
       },
     ];
   }, []);
